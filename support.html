@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rotunda — Support</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5a5a5a;
+    --accent: #2a5db0;
+    --border: #e0e0e0;
+    --notice-bg: #fff8e6;
+    --notice-border: #e8c766;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a;
+      --fg: #ecedee;
+      --muted: #a3a8b0;
+      --accent: #7aa6ff;
+      --border: #2b2f36;
+      --notice-bg: #2a2410;
+      --notice-border: #6b5a1c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+  }
+  h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.25rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.4rem;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+  .notice {
+    background: var(--notice-bg);
+    border: 1px solid var(--notice-border);
+    border-radius: 8px;
+    padding: 0.9rem 1.1rem;
+    font-size: 0.92rem;
+    margin-bottom: 2rem;
+  }
+  a { color: var(--accent); }
+  ul { padding-left: 1.4rem; }
+  li { margin-bottom: 0.5rem; }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Rotunda Support</h1>
+  <p class="updated">Last updated: September 22, 2026</p>
+
+  <div class="notice">
+    <strong>Status: PM draft.</strong> A dedicated support/contact address for Rotunda
+    has not been finalized yet. This page will be updated with a specific contact
+    channel once one is decided.
+  </div>
+
+  <h2>About Rotunda</h2>
+  <p>
+    Rotunda is a free, general-audience reference app for the U.S. Congress. It shows
+    recorded votes, bill text, and bill search results pulled live from official
+    government sources (congress.gov, the U.S. Senate, and GovInfo). Rotunda has no
+    user accounts, no ads, and no tracking — see the
+    <a href="index.html">Privacy Policy</a> for details.
+  </p>
+
+  <h2>Common questions</h2>
+  <ul>
+    <li><strong>How do I clear the bills and votes I've saved?</strong> Remove an
+      individual saved item from within the app at any time, or uninstall the app to
+      clear everything Rotunda has stored on your device.</li>
+    <li><strong>Why does bill search need an internet connection?</strong> Bill search
+      sends your search text directly to GovInfo's public search service so it can
+      return matching bills — Rotunda has no server of its own in that path.</li>
+    <li><strong>The app isn't showing current data — what happened?</strong> Rotunda
+      reads live from congress.gov, the Senate, and GovInfo. If one of those sources is
+      temporarily unreachable, Rotunda may show a short-lived cached result (up to 24
+      hours old) until the source is reachable again.</li>
+    <li><strong>Do I need an account to use Rotunda?</strong> No. Rotunda has no
+      accounts, login, or sign-up of any kind.</li>
+  </ul>
+
+  <h2>Reporting a problem</h2>
+  <p>
+    A finalized contact channel for reporting bugs or requesting help has not yet been
+    published here. Check back on this page for an update, or watch for the contact
+    details to appear in the app's own Settings screen.
+  </p>
+
+  <footer>
+    <p>Rotunda — the public record of the U.S. Congress. See also: <a href="index.html">Privacy Policy</a>.</p>
+  </footer>
+</main>
+</body>
+</html>

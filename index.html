@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rotunda — Privacy Policy</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5a5a5a;
+    --accent: #2a5db0;
+    --border: #e0e0e0;
+    --notice-bg: #fff8e6;
+    --notice-border: #e8c766;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a;
+      --fg: #ecedee;
+      --muted: #a3a8b0;
+      --accent: #7aa6ff;
+      --border: #2b2f36;
+      --notice-bg: #2a2410;
+      --notice-border: #6b5a1c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+  }
+  h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.25rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+    margin-top: 2.25rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.4rem;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+  .notice {
+    background: var(--notice-bg);
+    border: 1px solid var(--notice-border);
+    border-radius: 8px;
+    padding: 0.9rem 1.1rem;
+    font-size: 0.92rem;
+    margin-bottom: 2rem;
+  }
+  .summary {
+    background: rgba(127,127,127,0.08);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 2rem;
+  }
+  a { color: var(--accent); }
+  ul { padding-left: 1.4rem; }
+  li { margin-bottom: 0.5rem; }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Rotunda Privacy Policy</h1>
+  <p class="updated">Last updated: September 22, 2026</p>
+
+  <div class="notice">
+    <strong>Status: PM draft, not yet legally reviewed by counsel.</strong> This content
+    is drafted for Rotunda's in-app privacy policy screen and this external, publicly
+    reachable copy. Please do not treat any statement below as legal advice.
+  </div>
+
+  <div class="summary">
+    <strong>In short:</strong> Rotunda has no user accounts, no ads, and no analytics or
+    tracking of any kind. There is no Rotunda-operated server. Everything the app shows
+    you comes directly from official U.S. government sources over a secure connection,
+    and everything the app remembers about you — your saved bills and votes — stays on
+    your device. The one thing that ever leaves your device is the text you type into
+    bill search, which goes straight to the government's own search service, not to us,
+    because we have no "us" to send it to.
+  </div>
+
+  <h2>1. Who this policy covers</h2>
+  <p>
+    This policy covers the Rotunda mobile app (iOS and Android). Rotunda is a
+    general-audience civic reference tool for looking up official U.S. Congressional
+    records — recorded votes, bill text, and bill search — published by congress.gov,
+    the U.S. Senate, and GovInfo (the Government Publishing Office's document
+    repository). Rotunda does not operate any backend server of its own. There is
+    nothing to log in to, nothing to sync, and no Rotunda-side database that stores
+    information about you.
+  </p>
+
+  <h2>2. What Rotunda does not collect</h2>
+  <ul>
+    <li><strong>No user accounts or login.</strong> There is nothing to register for and
+      nothing tied to your identity anywhere in the app.</li>
+    <li><strong>No advertising.</strong> No ad network, no ad identifiers, no ad SDK.</li>
+    <li><strong>No analytics or tracking SDK of any kind.</strong> There is no analytics
+      library, attribution SDK, or third-party tracker anywhere in the app.</li>
+    <li><strong>No sale or sharing of personal information.</strong> Rotunda has never
+      sold, rented, or shared personal information with any third party, and has no
+      mechanism to do so.</li>
+  </ul>
+
+  <h2>3. What is stored on your device, and how to clear it</h2>
+  <p>
+    Rotunda stores a small amount of data locally on your device, using an on-device
+    key-value store. None of it is transmitted anywhere, and none of it is visible to
+    Rotunda's developers, because there is no server for it to be sent to.
+  </p>
+  <p>What's stored on-device:</p>
+  <ul>
+    <li><strong>Saved / followed bills and votes</strong> — the bills and votes you've
+      bookmarked, so Rotunda can show your Saved list and check those items for status
+      changes.</li>
+    <li><strong>A one-time notification-permission flag</strong> — a single true/false
+      marker recording whether Rotunda has already shown you its in-app explanation of
+      why it wants notification permission, so you're only asked once.</li>
+    <li><strong>A local cache of recently-viewed search and vote results</strong> — kept
+      so the app can show you the same screen instantly on a re-visit and can still show
+      your last-known results if a government source is temporarily unreachable. Cached
+      entries expire automatically after 24 hours.</li>
+  </ul>
+  <p>
+    <strong>How to clear it:</strong> you can remove an individual bill or vote from your
+    Saved list at any time from within the app. To clear everything Rotunda has stored,
+    uninstall the app — on-device storage is deleted along with the app, and reinstalling
+    starts with nothing saved.
+  </p>
+
+  <h2>4. Bill search: the one thing sent off your device</h2>
+  <p>
+    When you search for a bill by keyword, Rotunda sends your search text directly to
+    GovInfo's own public search API, over HTTPS, so it can look up matching bills. That
+    request goes straight from your device to GovInfo's servers — it does not pass
+    through, or get logged by, any Rotunda-operated server, because none exists.
+    GovInfo's handling of that request is governed by GovInfo's own privacy policy,
+    linked in Section 6 below.
+  </p>
+  <p>
+    Rotunda does not store your search history on your device beyond the short-lived
+    result cache described in Section 3, and does not attach any identifier to a search
+    that would let it, or GovInfo, tie searches together across sessions.
+  </p>
+
+  <h2>5. Local notifications</h2>
+  <p>
+    If you choose to enable notifications, Rotunda can notify you when a bill or vote
+    you're following changes status. This is handled entirely on-device:
+  </p>
+  <ul>
+    <li>A background check runs periodically (roughly every 6 hours) to see whether
+      anything you follow has changed, using the same government sources described in
+      Section 6.</li>
+    <li>If something changed, Rotunda schedules a notification using your device's own
+      local notification system.</li>
+  </ul>
+  <p>
+    This never involves a push notification service, a push token, or any server
+    round-trip — it is a purely local, on-device schedule. Rotunda never sends your
+    notification preferences, followed items, or device identifiers to anyone. You can
+    decline the notification permission prompt, or turn notifications off at any time
+    from your device's system Settings, and the app continues to work normally.
+  </p>
+
+  <h2>6. Government data sources Rotunda reads from</h2>
+  <p>
+    Every vote, bill, and document Rotunda shows you is read live, over HTTPS, directly
+    from the U.S. government's own published sources. Rotunda does not operate a mirror,
+    cache server, or intermediary for this data:
+  </p>
+  <ul>
+    <li><strong>congress.gov</strong> — House recorded votes and bill metadata.</li>
+    <li><strong>The U.S. Senate's own published records</strong> (senate.gov) — Senate
+      recorded votes.</li>
+    <li><strong>GovInfo</strong>, the Government Publishing Office's official document
+      repository — bill text and bill search.</li>
+  </ul>
+  <p>
+    These requests use a Rotunda-provisioned API key that identifies the app to these
+    services for rate-limiting purposes; it does not identify you personally, and it is
+    not tied to your device or your activity in any way Rotunda controls.
+  </p>
+  <p>
+    Because these are independent, government-operated services, each has its own
+    privacy practices, not Rotunda's:
+  </p>
+  <ul>
+    <li>congress.gov / Library of Congress: <a href="https://www.congress.gov/privacy-policy">congress.gov/privacy-policy</a></li>
+    <li>U.S. Senate: <a href="https://www.senate.gov/legal/privacy_policy.htm">senate.gov/legal/privacy_policy.htm</a></li>
+    <li>GovInfo / U.S. Government Publishing Office: <a href="https://www.govinfo.gov/privacy-policy">govinfo.gov/privacy-policy</a></li>
+  </ul>
+  <p>
+    We encourage you to review those policies if you have questions about how those
+    government services themselves handle requests.
+  </p>
+
+  <h2>7. Crash reporting (currently inactive)</h2>
+  <p>
+    Rotunda includes a crash-reporting library so that, once configured, crashes and
+    errors can be diagnosed and fixed. <strong>As of the date of this policy, crash
+    reporting is not active</strong>: no crash-reporting project has been configured, so
+    the library initializes in a no-op mode and sends nothing, to anyone, today.
+  </p>
+  <p>
+    If crash reporting is activated in a future version of the app, what it would send
+    is limited to technical diagnostic information used to fix bugs: error messages,
+    stack traces, and basic device/OS information (device model, OS version, app
+    version). It would not include anything you type into search, the contents of your
+    Saved list, or any other information Rotunda does not otherwise collect. This policy
+    will be updated, and the "last updated" date above revised, if and when that
+    changes.
+  </p>
+
+  <h2>8. No sale or sharing of information</h2>
+  <p>
+    Rotunda has never sold, rented, traded, or shared personal information with any
+    third party for advertising, marketing, or any other purpose, and has no technical
+    mechanism to do so — there is no Rotunda-operated server where such information
+    could even be collected in the first place. The only outbound data flow is the
+    search request described in Section 4, sent directly to GovInfo as part of using the
+    search feature itself, and the government API calls described in Section 6.
+  </p>
+
+  <h2>9. Children's privacy</h2>
+  <p>
+    Rotunda is a general-audience civic reference app. It is not directed at children,
+    has no account system, no age gate, and no feature that asks for or knowingly
+    collects personal information from anyone, including children under 13. Rotunda does
+    not have actual knowledge that any of its users are children under 13. Because
+    Rotunda collects no personal information from any user and has no server-side
+    records of any kind, the Children's Online Privacy Protection Act (COPPA, 16 CFR
+    Part 312) does not require a COPPA-specific notice for an app in this position. If
+    you believe a child has provided personal information through this app, please
+    contact us using the information in Section 11 and we will look into it — though as
+    described throughout this policy, there is no mechanism by which the app itself
+    would have collected or retained such information.
+  </p>
+
+  <h2>10. Your state privacy rights</h2>
+  <p>
+    A number of U.S. states (including California, under the CCPA/CPRA, and roughly 19
+    other states as of 2026) give residents rights such as the right to know what
+    personal information is collected about them and the right to request deletion.
+    Nearly all of these laws apply only to businesses that meet a revenue, user-count, or
+    data-sale threshold. Rotunda has no revenue, sells no data, and keeps no server-side
+    records about any user at all, so it does not meet any state's applicability
+    threshold today.
+  </p>
+  <p>
+    That said, we want to be straightforward with you: because Rotunda stores nothing
+    about you on any server, there is nothing for us to "know" or "delete" on your
+    behalf beyond what already lives entirely on your own device (Section 3), which you
+    can already view and clear yourself at any time, in the app or by uninstalling it.
+    If you'd still like to reach out with a privacy question or request, see Section 11
+    — we'll honor a reasonable request voluntarily, even though no state law currently
+    compels us to.
+  </p>
+
+  <h2>11. Contact</h2>
+  <p>
+    For questions about this policy or Rotunda's privacy practices, please reach out
+    through the app's official support page: <a href="support.html">Support</a>.
+    <strong>A dedicated support/contact address has not been finalized yet.</strong>
+    This section will be updated with the finalized contact channel before this policy
+    is submitted to any app store, and the "last updated" date will be revised
+    accordingly.
+  </p>
+
+  <h2>12. Security</h2>
+  <p>
+    All communication between Rotunda and any external source — the government APIs in
+    Section 6 — happens exclusively over HTTPS (encrypted in transit). Rotunda has no
+    server-side infrastructure of its own, so there is no Rotunda-operated database,
+    backend, or account system to secure or to be breached. Data you store on your
+    device (Section 3) is protected by your device's own operating-system-level security
+    (e.g., device passcode/biometric lock and OS-level app sandboxing); Rotunda relies on
+    those platform protections rather than adding its own encryption layer on top.
+  </p>
+
+  <h2>13. Changes to this policy</h2>
+  <p>
+    If Rotunda's data practices change — for example, if crash reporting (Section 7) is
+    activated, or a new feature changes what is stored or where it's sent — this policy
+    will be updated and the "last updated" date at the top will be revised to reflect
+    that. Since Rotunda has no account system, we cannot notify you directly; we
+    encourage you to check back periodically, and any in-app privacy policy screen will
+    always reflect the current version of this document.
+  </p>
+
+  <footer>
+    <p>Rotunda — the public record of the U.S. Congress. See also: <a href="support.html">Support</a>.</p>
+  </footer>
+</main>
+</body>
+</html>
